@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+
 Route::get('notifications', 'NotificationController@getAllNotifications');
 Route::get('notifications/{id}', 'NotificationController@getNotification');
 Route::post('notifications', 'NotificationController@createNotification');
